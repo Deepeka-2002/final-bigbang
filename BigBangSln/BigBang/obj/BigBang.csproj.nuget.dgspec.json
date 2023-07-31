@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Kanini training\\C#\\EFDBFirst\\BigBangSln\\BigBang\\BigBang.csproj": {}
+    "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\BigBang.csproj": {}
   },
   "projects": {
-    "C:\\Kanini training\\C#\\EFDBFirst\\BigBangSln\\BigBang\\BigBang.csproj": {
+    "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\BigBang.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Kanini training\\C#\\EFDBFirst\\BigBangSln\\BigBang\\BigBang.csproj",
+        "projectUniqueName": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\BigBang.csproj",
         "projectName": "BigBang",
-        "projectPath": "C:\\Kanini training\\C#\\EFDBFirst\\BigBangSln\\BigBang\\BigBang.csproj",
+        "projectPath": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\BigBang.csproj",
         "packagesPath": "C:\\Users\\dpka5\\.nuget\\packages\\",
-        "outputPath": "C:\\Kanini training\\C#\\EFDBFirst\\BigBangSln\\BigBang\\obj\\",
+        "outputPath": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

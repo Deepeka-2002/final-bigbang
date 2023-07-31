@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OpfDAPKo7H5f+Gby6qqRdwI0rkVHPR/Fr9T0o44M48RdiubRQfPmvCv/A8d50bhUNQPgr1NDGKOE7ugQ5dqiCQ==",
+  "dgSpecHash": "JzzB6OExwwsD9IeIJXjkdNHVROpkxq/uxVMfIIyVL1I6G7psoze2jw098HOz3npucqOcsPMhtkHSZCtUJJVEaA==",
   "success": true,
-  "projectFilePath": "C:\\Kanini training\\C#\\EFDBFirst\\BigBangSln\\BigBang\\BigBang.csproj",
+  "projectFilePath": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\BigBang.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dpka5\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\dpka5\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
