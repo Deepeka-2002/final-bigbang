@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Images\\D",
+      "PackagePath": "staticwebassets\\Images"
+    },
+    {
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Images\\Dee",
+      "PackagePath": "staticwebassets\\Images"
+    },
+    {
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Images\\Deepi",
+      "PackagePath": "staticwebassets\\Images"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BigBang.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.BigBang.props",
+      "PackagePath": "build\\BigBang.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.BigBang.props",
+      "PackagePath": "buildMultiTargeting\\BigBang.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.BigBang.props",
+      "PackagePath": "buildTransitive\\BigBang.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

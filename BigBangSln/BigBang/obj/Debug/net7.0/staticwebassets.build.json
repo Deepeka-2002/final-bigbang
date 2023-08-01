@@ -1,11 +1,71 @@
 {
   "Version": 1,
-  "Hash": "9k/KgW+Ctv92Pv4cDYuV7yAA22H332TQgAMKdFUKESg=",
+  "Hash": "lUMQ2SSsPDdRl9pETqPIDLam5bEFCJ2Sy3+VqsgV0fA=",
   "Source": "BigBang",
   "BasePath": "_content/BigBang",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "BigBang\\wwwroot",
+      "Source": "BigBang",
+      "ContentRoot": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\",
+      "BasePath": "_content/BigBang",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Images\\D",
+      "SourceId": "BigBang",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\",
+      "BasePath": "_content/BigBang",
+      "RelativePath": "Images/D",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\D"
+    },
+    {
+      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Images\\Dee",
+      "SourceId": "BigBang",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\",
+      "BasePath": "_content/BigBang",
+      "RelativePath": "Images/Dee",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Dee"
+    },
+    {
+      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Images\\Deepi",
+      "SourceId": "BigBang",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\",
+      "BasePath": "_content/BigBang",
+      "RelativePath": "Images/Deepi",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\Deepi"
+    }
+  ]
 }

@@ -10,7 +10,13 @@ namespace BigBang.Models
         public string EmailId { get; set; }
         public string Password { get; set; }
 
+        public string Agency { get; set; } = string.Empty;
+        public string Gender { get; set; } = string.Empty;
+
+        public long PhoneNumber { get; set; }
+
         public string Role { get; set; }= string.Empty;
+        public bool  Status { get; set; }  
 
         public ICollection<TourPackage>? tourpackage { get; set; }
 

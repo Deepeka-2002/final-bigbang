@@ -129,6 +129,22 @@ namespace BigBang.Migrations
                     b.ToTable("hotels");
                 });
 
+            modelBuilder.Entity("BigBang.Models.Imagetable", b =>
+                {
+                    b.Property<int>("Imgid")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Imgid"));
+
+                    b.Property<string>("ImgName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Imgid");
+
+                    b.ToTable("imagetable");
+                });
+
             modelBuilder.Entity("BigBang.Models.NearbySpots", b =>
                 {
                     b.Property<int>("SpotId")
@@ -242,7 +258,15 @@ namespace BigBang.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("UserId"));
 
+                    b.Property<string>("Agency")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("EmailId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Gender")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -250,9 +274,15 @@ namespace BigBang.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<long>("PhoneNumber")
+                        .HasColumnType("bigint");
+
                     b.Property<string>("Role")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
 
                     b.Property<string>("UserName")
                         .IsRequired()
@@ -275,7 +305,7 @@ namespace BigBang.Migrations
             modelBuilder.Entity("BigBang.Models.Feedback", b =>
                 {
                     b.HasOne("BigBang.Models.User", "user")
-                        .WithMany("feedbacks")
+                        .WithMany("feedback")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -334,7 +364,7 @@ namespace BigBang.Migrations
 
             modelBuilder.Entity("BigBang.Models.User", b =>
                 {
-                    b.Navigation("feedbacks");
+                    b.Navigation("feedback");
 
                     b.Navigation("tourpackage");
                 });

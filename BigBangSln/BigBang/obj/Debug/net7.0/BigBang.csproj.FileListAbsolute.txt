@@ -229,3 +229,4 @@ C:\Kanini training\final-bigbang\BigBangSln\BigBang\obj\Debug\net7.0\refint\BigB
 C:\Kanini training\final-bigbang\BigBangSln\BigBang\obj\Debug\net7.0\BigBang.pdb
 C:\Kanini training\final-bigbang\BigBangSln\BigBang\obj\Debug\net7.0\BigBang.genruntimeconfig.cache
 C:\Kanini training\final-bigbang\BigBangSln\BigBang\obj\Debug\net7.0\ref\BigBang.dll
+C:\Kanini training\final-bigbang\BigBangSln\BigBang\bin\Debug\net7.0\BigBang.staticwebassets.runtime.json

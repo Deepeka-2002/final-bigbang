@@ -23,6 +23,13 @@ namespace BigBang.Controllers
             _userRepository = userRepository;
         }
 
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<User>>> GetPendingUsers()
+        {
+            var customers = await _userRepository.GetPendingUsers();
+            return Ok(customers);
+        }
+
         [HttpPost("register")]
         public async Task<ActionResult<string>> Register(User user)
         {
@@ -33,13 +40,20 @@ namespace BigBang.Controllers
 
             // Encrypt the password before storing it
             user.Password = Encrypt(user.Password);
+            if(user.Role == "Agent")
+            {
+                user.Status = false;
+            }
+            else
+            {
+                user.Status = true;
+            }
 
             var createdUser = await _userRepository.AddUser(user);
 
             // Generate JWT token with user details
             var token = GenerateJwtToken(createdUser);
 
-            // Return the token as part of the response
             return Ok(token);
         }
 
@@ -66,6 +80,10 @@ namespace BigBang.Controllers
                 return Unauthorized("Invalid credentials");
             }
 
+            if (!existingUser.Status)
+            {
+                return Unauthorized("Not approved");
+            }
             // Passwords match, generate JWT token with user details
             var token = GenerateJwtToken(existingUser);
 

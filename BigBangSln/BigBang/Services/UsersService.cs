@@ -18,12 +18,10 @@ namespace BigBang.Services
 
             public async Task<User> AddUser(User user)
             {
-                // No need to re-encrypt the password here since it's already encrypted in the UsersController
-                // user.Password = Encrypt(user.Password);
 
                 _context.user.Add(user);
                 await _context.SaveChangesAsync();
-
+              
                 return user;
             }
 
@@ -31,12 +29,16 @@ namespace BigBang.Services
             {
                 var users = await _context.user.ToListAsync();
 
-                // Note: Uncomment the decryption logic if you want to decrypt the passwords before returning
-
                 return users;
             }
 
-            public async Task<User> GetUserByEmail(string email)
+        public async Task<List<User>> GetPendingUsers()
+        {
+            var users = await _context.user.Where(u => u.Status == false).ToListAsync();
+            return users;
+        }
+
+        public async Task<User> GetUserByEmail(string email)
             {
                 // Implement the logic to get the user by email from the database
                 return await _context.user.FirstOrDefaultAsync(u => u.EmailId == email);

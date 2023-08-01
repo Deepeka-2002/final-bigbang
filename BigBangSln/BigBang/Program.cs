@@ -53,7 +53,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors("Policy");
-
+app.UseStaticFiles();   
 app.UseHttpsRedirection();
 
 app.UseAuthentication();
