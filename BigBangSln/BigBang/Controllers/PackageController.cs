@@ -2,6 +2,7 @@
 using BigBang.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace BigBang.Controllers
 {
@@ -10,25 +11,50 @@ namespace BigBang.Controllers
     public class PackageController : ControllerBase
     {
         private readonly IPackage IPack;
-
-        public PackageController(IPackage IPack)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public PackageController(IPackage IPack, IWebHostEnvironment webHostEnvironment)
         {
             this.IPack = IPack;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         // GET: api/Customers
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<TourPackage>>> GetTourPackages()
+        public IActionResult GetTourPackages()
         {
-            var customers = await IPack.GetTourPackages();
-            return Ok(customers);
+            var images = IPack.GetTourPackages();
+            if (images == null)
+            {
+                return NotFound();
+            }
+
+            var imageList = new List<TourPackage>();
+            foreach (var image in images)
+            {
+                var uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "Packages");
+                var filePath = Path.Combine(uploadsFolder, image.PackageImg);
+
+                var imageBytes = System.IO.File.ReadAllBytes(filePath);
+                var tourData = new TourPackage
+                {
+                    PackageId = image.PackageId,
+                   
+                    Destination = image.Destination,
+                    PriceForAdult = image.PriceForAdult,
+                    PriceForChild = image.PriceForChild,
+                    Days = image.Days,
+                    Description = image.Description,
+                    UserId = image.UserId,
+                    PackageImg = Convert.ToBase64String(imageBytes)
+                };
+                imageList.Add(tourData);
+            }
+
+            return new JsonResult(imageList);
         }
 
 
-
-        // PUT: api/Customers/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost("image")]
         public async Task<ActionResult> Post([FromForm] TourPackage tourpackage, IFormFile imageFile)
         {
@@ -36,13 +62,12 @@ namespace BigBang.Controllers
             try
             {
                 var createdHotel = await IPack.AddTourPackage(tourpackage, imageFile);
-                //return CreatedAtAction("Get", new { id = createdHotel.PackageId }, createdHotel);
+                
                 return CreatedAtAction("Post",  createdHotel);
 
             }
             catch (ArgumentException ex)
             {
-                //ModelState.AddModelError("", ex.Message);
                 return BadRequest(ModelState);
             }
         }

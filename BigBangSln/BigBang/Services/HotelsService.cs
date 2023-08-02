@@ -19,9 +19,9 @@ namespace BigBang.Services
         }
         
 
-            public async Task<List<Hotels>> GetHotels()
+            public IEnumerable<Hotels> GetHotels()
             {
-                var apps = await _Context.hotels.ToListAsync();
+                var apps = _Context.hotels.ToList();
                 return apps;
             }
 

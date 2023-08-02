@@ -5,7 +5,7 @@ namespace BigBang.Interface
 {
     public interface IHotels
     {
-        Task<List<Hotels>> GetHotels();
+        IEnumerable<Hotels> GetHotels();
         Task<Hotels> AddHotel([FromForm] Hotels hotels, IFormFile imageFile);
         Task<Hotels>? UpdateHotelById(Hotels hotels, IFormFile imageFile);
         Task<List<Hotels>?> DeleteHotelById(int id);

@@ -16,9 +16,9 @@ namespace BigBang.Services
         }
 
 
-        public async Task<List<NearbySpots>> GetSpots()
+        public IEnumerable<NearbySpots> GetSpots()
         {
-            var apps = await _Context.nearbyspots.ToListAsync();
+            var apps =  _Context.nearbyspots.ToList();
             return apps;
         }
 

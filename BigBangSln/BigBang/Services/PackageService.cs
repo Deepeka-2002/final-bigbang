@@ -16,9 +16,9 @@ namespace BigBang.Services
         }
 
 
-        public async Task<List<TourPackage>> GetTourPackages()
+        public IEnumerable<TourPackage> GetTourPackages()
         {
-            var apps = await _Context.tourpackage.ToListAsync();
+            var apps =  _Context.tourpackage.ToList();
             return apps;
         }
 

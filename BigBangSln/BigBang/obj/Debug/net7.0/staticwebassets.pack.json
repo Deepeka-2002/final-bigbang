@@ -1,36 +1,28 @@
 {
   "Files": [
     {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Gallery\\0491ddad-615d-4928-8fef-44b0f784369c.jpg",
-      "PackagePath": "staticwebassets\\Gallery\\0491ddad-615d-4928-8fef-44b0f784369c.jpg"
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Gallery\\4f516936-4d9a-4c9b-9619-d9e231443060.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\4f516936-4d9a-4c9b-9619-d9e231443060.jpg"
     },
     {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Gallery\\0e42a277-8a33-4b99-ab68-2b78e90fecfe.jpg",
-      "PackagePath": "staticwebassets\\Gallery\\0e42a277-8a33-4b99-ab68-2b78e90fecfe.jpg"
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Gallery\\e0b4be25-0ff0-4d25-9050-0ab6092556b6.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\e0b4be25-0ff0-4d25-9050-0ab6092556b6.jpg"
     },
     {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Gallery\\D",
-      "PackagePath": "staticwebassets\\Gallery"
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Gallery\\f0410c97-8f0f-409d-9635-42aea9d20d1d.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\f0410c97-8f0f-409d-9635-42aea9d20d1d.jpg"
     },
     {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Gallery\\Dee",
-      "PackagePath": "staticwebassets\\Gallery"
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Hotels\\d541bf4c-798f-4910-a981-adbeba135cce.jpg",
+      "PackagePath": "staticwebassets\\Hotels\\d541bf4c-798f-4910-a981-adbeba135cce.jpg"
     },
     {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Gallery\\Deepi",
-      "PackagePath": "staticwebassets\\Gallery"
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\1a96f52e-d4a6-4b9c-b029-1967c6d8f7d0.jpg",
+      "PackagePath": "staticwebassets\\Packages\\1a96f52e-d4a6-4b9c-b029-1967c6d8f7d0.jpg"
     },
     {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Hotels\\5399ae34-bbc1-448a-a727-2d3c02231897.jpg",
-      "PackagePath": "staticwebassets\\Hotels\\5399ae34-bbc1-448a-a727-2d3c02231897.jpg"
-    },
-    {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\c8e3c602-fa0d-4d08-bec9-02802beab893.jpg",
-      "PackagePath": "staticwebassets\\Packages\\c8e3c602-fa0d-4d08-bec9-02802beab893.jpg"
-    },
-    {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\d6d2a015-5b2c-4b63-a961-8c1603189864.jpg",
-      "PackagePath": "staticwebassets\\Packages\\d6d2a015-5b2c-4b63-a961-8c1603189864.jpg"
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Spots\\84da9f78-aa64-4a0a-9332-2e005bc18611.jpg",
+      "PackagePath": "staticwebassets\\Spots\\84da9f78-aa64-4a0a-9332-2e005bc18611.jpg"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BigBang.Microsoft.AspNetCore.StaticWebAssets.props",

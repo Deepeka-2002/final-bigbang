@@ -1,5 +1,6 @@
 ﻿using BigBang.Interface;
 using BigBang.Models;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,39 +11,64 @@ namespace BigBang.Controllers
     public class HotelsController : ControllerBase
     {
         private readonly IHotels IHot;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public HotelsController(IHotels IHot)
+        public HotelsController(IHotels IHot, IWebHostEnvironment webHostEnvironment)
         {
             this.IHot = IHot;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         // GET: api/Customers
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Hotels>>> GetHotels()
+        public IActionResult GetHotels()
         {
-            var customers = await IHot.GetHotels();
-            return Ok(customers);
+            var images = IHot.GetHotels();
+            if (images == null)
+            {
+                return NotFound();
+            }
+
+            var imageList = new List<Hotels>();
+            foreach (var image in images)
+            {
+                var uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "Hotels");
+                var filePath = Path.Combine(uploadsFolder, image.HotelImg);
+
+                var imageBytes = System.IO.File.ReadAllBytes(filePath);
+                var Data = new Hotels
+                {
+                    PackageId = image.PackageId,
+
+                    HotelName = image.HotelName,
+                    Location = image.Location,
+                    HotelId = image.HotelId,
+                   
+                    HotelImg = Convert.ToBase64String(imageBytes)
+                };
+
+                imageList.Add(Data);
+            }
+
+            return new JsonResult(imageList);
         }
 
 
 
-
-        // PUT: api/Customers/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Hotels>> Post([FromForm] Hotels hotels, IFormFile imageFile)
+        public async Task<ActionResult> Post([FromForm] Hotels hotels, IFormFile imageFile)
         {
 
             try
             {
                 var createdHotel = await IHot.AddHotel(hotels, imageFile);
-                return CreatedAtAction("Get", new { id = createdHotel.HotelId }, createdHotel);
+                return CreatedAtAction("Post", createdHotel);
 
             }
             catch (ArgumentException ex)
             {
-                ModelState.AddModelError("", ex.Message);
+              
                 return BadRequest(ModelState);
             }
         }
