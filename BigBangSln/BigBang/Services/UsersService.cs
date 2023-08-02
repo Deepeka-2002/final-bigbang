@@ -38,6 +38,23 @@ namespace BigBang.Services
             return users;
         }
 
+        public async Task<User> GetUserById(int userId)
+        {
+            return await _context.user.FirstOrDefaultAsync(u => u.UserId == userId);
+        }
+
+        public async Task UpdateUser(User user)
+        {
+            _context.user.Update(user);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task DeleteUser(User user)
+        {
+            _context.user.Remove(user);
+            await _context.SaveChangesAsync();
+        }
+
         public async Task<User> GetUserByEmail(string email)
             {
                 // Implement the logic to get the user by email from the database

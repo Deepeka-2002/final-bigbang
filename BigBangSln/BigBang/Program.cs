@@ -15,6 +15,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IUsers, UsersService>();
+builder.Services.AddScoped<IGallery, ImageService>();
+builder.Services.AddScoped<IRestaurents, RestaurentsService>();
+builder.Services.AddScoped<IFeedback, FeedbackService>();
+builder.Services.AddScoped<IBooking, BookingService>(); 
+builder.Services.AddScoped<IHotels, HotelsService>();   
+builder.Services.AddScoped<ISpots, SpotsService>();
+builder.Services.AddScoped<IPackage, PackageService>();
+
 
 builder.Services.AddDbContext<TravelDbContext>(optionsAction: options =>
      options.UseSqlServer(builder.Configuration.GetConnectionString(name: "SQLConnection")));

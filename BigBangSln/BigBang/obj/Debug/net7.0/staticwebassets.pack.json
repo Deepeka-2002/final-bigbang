@@ -1,16 +1,36 @@
 {
   "Files": [
     {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Images\\D",
-      "PackagePath": "staticwebassets\\Images"
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Gallery\\0491ddad-615d-4928-8fef-44b0f784369c.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\0491ddad-615d-4928-8fef-44b0f784369c.jpg"
     },
     {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Images\\Dee",
-      "PackagePath": "staticwebassets\\Images"
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Gallery\\0e42a277-8a33-4b99-ab68-2b78e90fecfe.jpg",
+      "PackagePath": "staticwebassets\\Gallery\\0e42a277-8a33-4b99-ab68-2b78e90fecfe.jpg"
     },
     {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Images\\Deepi",
-      "PackagePath": "staticwebassets\\Images"
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Gallery\\D",
+      "PackagePath": "staticwebassets\\Gallery"
+    },
+    {
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Gallery\\Dee",
+      "PackagePath": "staticwebassets\\Gallery"
+    },
+    {
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Gallery\\Deepi",
+      "PackagePath": "staticwebassets\\Gallery"
+    },
+    {
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Hotels\\5399ae34-bbc1-448a-a727-2d3c02231897.jpg",
+      "PackagePath": "staticwebassets\\Hotels\\5399ae34-bbc1-448a-a727-2d3c02231897.jpg"
+    },
+    {
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\c8e3c602-fa0d-4d08-bec9-02802beab893.jpg",
+      "PackagePath": "staticwebassets\\Packages\\c8e3c602-fa0d-4d08-bec9-02802beab893.jpg"
+    },
+    {
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\d6d2a015-5b2c-4b63-a961-8c1603189864.jpg",
+      "PackagePath": "staticwebassets\\Packages\\d6d2a015-5b2c-4b63-a961-8c1603189864.jpg"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BigBang.Microsoft.AspNetCore.StaticWebAssets.props",

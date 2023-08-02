@@ -91,7 +91,53 @@ namespace BigBang.Controllers
             return Ok(token);
         }
 
+        [HttpPost("approve/{userId}")]
+        public async Task<ActionResult> ApproveAgent(int userId)
+        {
+            if (_userRepository == null)
+            {
+                return Problem("User repository is null.");
+            }
 
+            var agent = await _userRepository.GetUserById(userId);
+
+            if (agent == null)
+            {
+                return NotFound("Agent not found.");
+            }
+
+            if (agent.Role != "Agent")
+            {
+                return BadRequest("The user is not an agent.");
+            }
+
+            agent.Status = true;
+
+            await _userRepository.UpdateUser(agent);
+
+            return Ok("Agent approved successfully.");
+        }
+
+
+        [HttpPost("reject/{userId}")]
+        public async Task<ActionResult> RejectUser(int userId)
+        {
+            if (_userRepository == null)
+            {
+                return Problem("User repository is null.");
+            }
+
+            var user = await _userRepository.GetUserById(userId);
+
+            if (user == null)
+            {
+                return NotFound("User not found.");
+            }
+
+            await _userRepository.DeleteUser(user); // Delete the user from the database
+
+            return Ok("User rejected successfully.");
+        }
 
         private string GenerateJwtToken(User user)
         {

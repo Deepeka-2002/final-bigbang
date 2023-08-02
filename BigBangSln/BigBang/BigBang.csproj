@@ -24,7 +24,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\Images\" />
+    <Folder Include="wwwroot\Gallery\" />
+    <Folder Include="wwwroot\Hotels\" />
+    <Folder Include="wwwroot\Spots\" />
+    <Folder Include="wwwroot\Packages\" />
   </ItemGroup>
 
 </Project>

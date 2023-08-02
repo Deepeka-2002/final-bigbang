@@ -9,7 +9,6 @@ namespace BigBang.Models
         public int HotelId { get; set; }
 
         public string HotelName { get; set; } = string.Empty;
-
         public string Location { get; set; } = string.Empty;
         public string HotelImg { get; set; } = string.Empty;
 

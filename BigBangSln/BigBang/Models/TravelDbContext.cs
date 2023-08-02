@@ -15,7 +15,7 @@ namespace BigBang.Models
         public DbSet<Feedback> feedback { get; set; }
         public DbSet<Bookings> bookings { get; set; }
 
-        public virtual DbSet<Imagetable> imagetable { get; set; }
+        public  DbSet<ImageGallery> imagegallery { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
