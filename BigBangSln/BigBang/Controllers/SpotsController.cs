@@ -3,6 +3,7 @@ using BigBang.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Hosting;
 
 namespace BigBang.Controllers
 {
@@ -57,7 +58,13 @@ namespace BigBang.Controllers
         }
 
 
+        [HttpGet("Filter/{packageId}")]
+        public IEnumerable<NearbySpots> Filterpackage(int packageId)
+        {
 
+            return ISpot.Filterpackage(packageId);
+
+        }
 
         // PUT: api/Customers/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754

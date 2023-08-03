@@ -2,6 +2,7 @@
 using BigBang.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Hosting;
 
 namespace BigBang.Controllers
 {
@@ -25,7 +26,13 @@ namespace BigBang.Controllers
             return Ok(customers);
         }
 
+        [HttpGet("Filter/{packageId}")]
+        public IEnumerable<Restaurents> Filterpackage(int packageId)
+        {
 
+            return IRestaurent.Filterpackage(packageId);
+
+        }
 
 
         // PUT: api/Customers/5

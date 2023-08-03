@@ -54,6 +54,13 @@ namespace BigBang.Controllers
             return new JsonResult(imageList);
         }
 
+        [HttpGet("Filter/{packageId}")]
+        public IEnumerable<Hotels> Filterpackage(int packageId)
+        {
+
+            return IHot.Filterpackage(packageId);
+
+        }
 
 
         [HttpPost]

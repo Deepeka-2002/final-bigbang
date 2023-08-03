@@ -21,6 +21,12 @@ namespace BigBang.Services
             var apps = await _Context.restaurents.ToListAsync();
             return apps;
         }
+        public IEnumerable<Restaurents> Filterpackage(int packageId)
+        {
+            List<Restaurents> restaurents = _Context.restaurents.Where(x => x.PackageId == packageId).ToList();
+            return restaurents;
+        }
+
 
 
         public async Task<List<Restaurents>> AddRestaurent(Restaurents apps)

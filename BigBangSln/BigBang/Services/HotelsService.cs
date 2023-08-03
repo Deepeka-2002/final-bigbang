@@ -49,6 +49,12 @@ namespace BigBang.Services
             return hotels;
         }
 
+        public IEnumerable<Hotels> Filterpackage(int packageId)
+        {
+            List<Hotels> hotels = _Context.hotels.Where(x => x.PackageId == packageId).ToList();
+            return hotels;
+        }
+
 
         public async Task<Hotels>? UpdateHotelById(Hotels hotels, IFormFile imageFile)
         {

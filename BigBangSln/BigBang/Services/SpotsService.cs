@@ -22,6 +22,12 @@ namespace BigBang.Services
             return apps;
         }
 
+        public IEnumerable<NearbySpots> Filterpackage(int packageId)
+        {
+            List<NearbySpots> spots = _Context.nearbyspots.Where(x => x.PackageId == packageId).ToList();
+            return spots;
+        }
+
 
         public async Task<NearbySpots> AddSpots([FromForm] NearbySpots Spots, IFormFile imageFile)
         {
