@@ -27,7 +27,7 @@ namespace BigBang.Migrations
                 columns: table => new
                 {
                     UserId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                        .Annotation("SqlServer:Identity", "1001, 1"),
                     UserName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     EmailId = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Password = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -47,7 +47,7 @@ namespace BigBang.Migrations
                 columns: table => new
                 {
                     FeedId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                        .Annotation("SqlServer:Identity", "2001, 1"),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -70,7 +70,7 @@ namespace BigBang.Migrations
                 columns: table => new
                 {
                     PackageId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                        .Annotation("SqlServer:Identity", "3001, 1"),
                     Destination = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PriceForAdult = table.Column<int>(type: "int", nullable: false),
                     PriceForChild = table.Column<int>(type: "int", nullable: false),
@@ -91,36 +91,11 @@ namespace BigBang.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "bookings",
-                columns: table => new
-                {
-                    BookingId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    CheckIn = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    CheckOut = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    Adult = table.Column<int>(type: "int", nullable: false),
-                    Child = table.Column<int>(type: "int", nullable: false),
-                    PackageId = table.Column<int>(type: "int", nullable: false),
-                    TourPackagePackageId = table.Column<int>(type: "int", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_bookings", x => x.BookingId);
-                    table.ForeignKey(
-                        name: "FK_bookings_tourpackage_TourPackagePackageId",
-                        column: x => x.TourPackagePackageId,
-                        principalTable: "tourpackage",
-                        principalColumn: "PackageId");
-                });
-
-            migrationBuilder.CreateTable(
                 name: "hotels",
                 columns: table => new
                 {
                     HotelId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                        .Annotation("SqlServer:Identity", "4001, 1"),
                     HotelName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Location = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     HotelImg = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -142,7 +117,7 @@ namespace BigBang.Migrations
                 columns: table => new
                 {
                     SpotId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                        .Annotation("SqlServer:Identity", "5001, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Location = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -165,7 +140,7 @@ namespace BigBang.Migrations
                 columns: table => new
                 {
                     RestaurentId = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                        .Annotation("SqlServer:Identity", "6001, 1"),
                     RestaurentName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Location = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PackageId = table.Column<int>(type: "int", nullable: false),
@@ -180,6 +155,56 @@ namespace BigBang.Migrations
                         principalTable: "tourpackage",
                         principalColumn: "PackageId");
                 });
+
+            migrationBuilder.CreateTable(
+                name: "bookings",
+                columns: table => new
+                {
+                    BookingId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "7001, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Phone = table.Column<long>(type: "bigint", nullable: false),
+                    CheckIn = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CheckOut = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Adult = table.Column<int>(type: "int", nullable: false),
+                    Child = table.Column<int>(type: "int", nullable: false),
+                    HotelId = table.Column<int>(type: "int", nullable: false),
+                    HotelsHotelId = table.Column<int>(type: "int", nullable: true),
+                    RestaurentId = table.Column<int>(type: "int", nullable: false),
+                    RestaurentsRestaurentId = table.Column<int>(type: "int", nullable: true),
+                    PackageId = table.Column<int>(type: "int", nullable: false),
+                    TourPackagePackageId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_bookings", x => x.BookingId);
+                    table.ForeignKey(
+                        name: "FK_bookings_hotels_HotelsHotelId",
+                        column: x => x.HotelsHotelId,
+                        principalTable: "hotels",
+                        principalColumn: "HotelId");
+                    table.ForeignKey(
+                        name: "FK_bookings_restaurents_RestaurentsRestaurentId",
+                        column: x => x.RestaurentsRestaurentId,
+                        principalTable: "restaurents",
+                        principalColumn: "RestaurentId");
+                    table.ForeignKey(
+                        name: "FK_bookings_tourpackage_TourPackagePackageId",
+                        column: x => x.TourPackagePackageId,
+                        principalTable: "tourpackage",
+                        principalColumn: "PackageId");
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_bookings_HotelsHotelId",
+                table: "bookings",
+                column: "HotelsHotelId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_bookings_RestaurentsRestaurentId",
+                table: "bookings",
+                column: "RestaurentsRestaurentId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_bookings_TourPackagePackageId",
@@ -222,13 +247,13 @@ namespace BigBang.Migrations
                 name: "feedback");
 
             migrationBuilder.DropTable(
-                name: "hotels");
-
-            migrationBuilder.DropTable(
                 name: "imagegallery");
 
             migrationBuilder.DropTable(
                 name: "nearbyspots");
+
+            migrationBuilder.DropTable(
+                name: "hotels");
 
             migrationBuilder.DropTable(
                 name: "restaurents");

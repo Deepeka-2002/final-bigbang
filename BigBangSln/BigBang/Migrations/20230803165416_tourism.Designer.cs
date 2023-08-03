@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BigBang.Migrations
 {
     [DbContext(typeof(TravelDbContext))]
-    [Migration("20230802122425_tourism")]
+    [Migration("20230803165416_tourism")]
     partial class tourism
     {
         /// <inheritdoc />
@@ -49,6 +49,12 @@ namespace BigBang.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("HotelId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("HotelsHotelId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -56,10 +62,23 @@ namespace BigBang.Migrations
                     b.Property<int>("PackageId")
                         .HasColumnType("int");
 
+                    b.Property<long>("Phone")
+                        .HasColumnType("bigint");
+
+                    b.Property<int>("RestaurentId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("RestaurentsRestaurentId")
+                        .HasColumnType("int");
+
                     b.Property<int?>("TourPackagePackageId")
                         .HasColumnType("int");
 
                     b.HasKey("BookingId");
+
+                    b.HasIndex("HotelsHotelId");
+
+                    b.HasIndex("RestaurentsRestaurentId");
 
                     b.HasIndex("TourPackagePackageId");
 
@@ -292,9 +311,21 @@ namespace BigBang.Migrations
 
             modelBuilder.Entity("BigBang.Models.Bookings", b =>
                 {
+                    b.HasOne("BigBang.Models.Hotels", "Hotels")
+                        .WithMany()
+                        .HasForeignKey("HotelsHotelId");
+
+                    b.HasOne("BigBang.Models.Restaurents", "Restaurents")
+                        .WithMany()
+                        .HasForeignKey("RestaurentsRestaurentId");
+
                     b.HasOne("BigBang.Models.TourPackage", "TourPackage")
                         .WithMany("bookings")
                         .HasForeignKey("TourPackagePackageId");
+
+                    b.Navigation("Hotels");
+
+                    b.Navigation("Restaurents");
 
                     b.Navigation("TourPackage");
                 });
