@@ -25,8 +25,17 @@ namespace BigBang.Services
                 return apps;
             }
 
+        public async Task<Hotels?> GetHotelById(int id)
+        {
+            var customer = await _Context.hotels.FindAsync(id);
+            if (customer is null)
+            {
+                throw new ArithmeticException("Invalid id");
+            }
+            return customer;
+        }
 
-            public async Task<Hotels> AddHotel([FromForm] Hotels hotels, IFormFile imageFile)
+        public async Task<Hotels> AddHotel([FromForm] Hotels hotels, IFormFile imageFile)
         {
             if (imageFile == null || imageFile.Length == 0)
             {

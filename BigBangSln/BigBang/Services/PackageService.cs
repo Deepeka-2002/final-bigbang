@@ -22,6 +22,15 @@ namespace BigBang.Services
             return apps;
         }
 
+        public async Task<TourPackage?> GetPackageById(int id)
+        {
+            var customer = await _Context.tourpackage.FindAsync(id);
+            if (customer is null)
+            {
+                throw new ArithmeticException("Invalid User Id");
+            }
+            return customer;
+        }
 
         public async Task<TourPackage> AddTourPackage([FromForm] TourPackage tourpackage, IFormFile imageFile)
         {

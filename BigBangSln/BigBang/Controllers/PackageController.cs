@@ -2,6 +2,7 @@
 using BigBang.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace BigBang.Controllers
@@ -54,6 +55,20 @@ namespace BigBang.Controllers
             return new JsonResult(imageList);
         }
 
+        [HttpGet("{id}")]
+        public async Task<ActionResult<TourPackage>> GetPackageById(int id)
+        {
+            try
+            {
+                var customer = await IPack.GetPackageById( id);
+                return Ok(customer);
+            }
+
+            catch (ArithmeticException ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
 
         [HttpPost("image")]
         public async Task<ActionResult> Post([FromForm] TourPackage tourpackage, IFormFile imageFile)
@@ -66,7 +81,7 @@ namespace BigBang.Controllers
                 return CreatedAtAction("Post",  createdHotel);
 
             }
-            catch (ArgumentException ex)
+            catch (NullReferenceException ex)
             {
                 return BadRequest(ModelState);
             }

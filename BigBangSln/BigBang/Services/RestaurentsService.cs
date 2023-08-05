@@ -21,6 +21,16 @@ namespace BigBang.Services
             var apps = await _Context.restaurents.ToListAsync();
             return apps;
         }
+        public async Task<Restaurents?> GetRestaurentById(int id)
+        {
+            var customer = await _Context.restaurents.FindAsync(id);
+            if (customer is null)
+            {
+                throw new ArithmeticException("Invalid id");
+            }
+            return customer;
+        }
+
         public IEnumerable<Restaurents> Filterpackage(int packageId)
         {
             List<Restaurents> restaurents = _Context.restaurents.Where(x => x.PackageId == packageId).ToList();

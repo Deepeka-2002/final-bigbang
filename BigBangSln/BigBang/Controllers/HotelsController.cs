@@ -3,6 +3,7 @@ using BigBang.Models;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace BigBang.Controllers
 {
@@ -54,11 +55,53 @@ namespace BigBang.Controllers
             return new JsonResult(imageList);
         }
 
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Hotels>> GetHotelById(int id)
+        {
+            try
+            {
+                var customer = await IHot.GetHotelById(id);
+                return Ok(customer);
+            }
+
+            catch (NullReferenceException ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
         [HttpGet("Filter/{packageId}")]
-        public IEnumerable<Hotels> Filterpackage(int packageId)
+        public IActionResult Filterpackage(int packageId)
         {
 
-            return IHot.Filterpackage(packageId);
+            var images = IHot.Filterpackage(packageId);
+            if (images == null)
+            {
+                return NotFound();
+            }
+
+            var imageList = new List<Hotels>();
+            foreach (var image in images)
+            {
+                var uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "Hotels");
+                var filePath = Path.Combine(uploadsFolder, image.HotelImg);
+
+                var imageBytes = System.IO.File.ReadAllBytes(filePath);
+                var Data = new Hotels
+                {
+                    PackageId = image.PackageId,
+
+                    HotelName = image.HotelName,
+                    Location = image.Location,
+                    HotelId = image.HotelId,
+
+                    HotelImg = Convert.ToBase64String(imageBytes)
+                };
+
+                imageList.Add(Data);
+            }
+
+            return new JsonResult(imageList);
 
         }
 

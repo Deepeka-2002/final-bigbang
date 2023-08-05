@@ -5,6 +5,7 @@ namespace BigBang.Interface
     public interface IRestaurents
     {
         Task<List<Restaurents>> GetRestaurents();
+        Task<Restaurents>? GetRestaurentById(int id);
         IEnumerable<Restaurents> Filterpackage(int packageId);
         Task<List<Restaurents>> AddRestaurent(Restaurents apps);
 

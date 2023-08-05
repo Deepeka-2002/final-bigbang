@@ -3,6 +3,7 @@ using BigBang.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
+using System.Collections.Generic;
 
 namespace BigBang.Controllers
 {
@@ -34,6 +35,20 @@ namespace BigBang.Controllers
 
         }
 
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Restaurents>> GetRestaurentById(int id)
+        {
+            try
+            {
+                var customer = await IRestaurent.GetRestaurentById(id);
+                return Ok(customer);
+            }
+
+            catch (NullReferenceException ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
 
         // PUT: api/Customers/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754

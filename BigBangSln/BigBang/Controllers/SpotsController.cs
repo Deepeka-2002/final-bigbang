@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
+using System.Collections.Generic;
 
 namespace BigBang.Controllers
 {
@@ -57,13 +58,53 @@ namespace BigBang.Controllers
             return new JsonResult(imageList);
         }
 
+        [HttpGet("{id}")]
+        public async Task<ActionResult<NearbySpots>> GetSpotById(int id)
+        {
+            try
+            {
+                var customer = await ISpot.GetSpotById(id);
+                return Ok(customer);
+            }
+
+            catch (ArithmeticException ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
 
         [HttpGet("Filter/{packageId}")]
-        public IEnumerable<NearbySpots> Filterpackage(int packageId)
+        public IActionResult Filterpackage(int packageId)
         {
+            var images = ISpot.Filterpackage(packageId);
+            if (images == null)
+            {
+                return NotFound();
+            }
 
-            return ISpot.Filterpackage(packageId);
+            var imageList = new List<NearbySpots>();
+            foreach (var image in images)
+            {
+                var uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "Spots");
+                var filePath = Path.Combine(uploadsFolder, image.Spotsimg);
 
+                var imageBytes = System.IO.File.ReadAllBytes(filePath);
+                var Data = new NearbySpots
+                {
+                    PackageId = image.PackageId,
+
+                    Name = image.Name,
+
+                    Location = image.Location,
+                    Description = image.Description,
+                    Spotsimg = Convert.ToBase64String(imageBytes)
+                };
+
+                imageList.Add(Data);
+
+            }
+
+            return new JsonResult(imageList);
         }
 
         // PUT: api/Customers/5
