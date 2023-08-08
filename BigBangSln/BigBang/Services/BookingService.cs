@@ -37,7 +37,7 @@ namespace BigBang.Services
                 var customer = await _Context.bookings.FindAsync(id);
                 if (customer is null)
                 {
-                    throw new ArithmeticException("Invalid  id to update details");
+                    throw new Exception("Invalid  id to update details");
                 }
                 customer.Name = apps.Name;
                 

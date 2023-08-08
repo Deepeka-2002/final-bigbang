@@ -17,6 +17,8 @@ namespace BigBang.Models
 
         public int Child { get; set; }
 
+        public int Amount { get; set; }
+
         public int HotelId { get; set; }
         public Hotels? Hotels { get; set; }
         public int RestaurentId { get; set; }

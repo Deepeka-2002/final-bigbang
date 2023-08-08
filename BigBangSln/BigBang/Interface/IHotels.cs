@@ -6,7 +6,7 @@ namespace BigBang.Interface
     public interface IHotels
     {
         IEnumerable<Hotels> GetHotels();
-        Task<Hotels>? GetHotelById(int id);
+        IEnumerable<Hotels> GetHotelById(int id);
         Task<Hotels> AddHotel([FromForm] Hotels hotels, IFormFile imageFile);
         IEnumerable<Hotels> Filterpackage(int packageId);
         Task<Hotels>? UpdateHotelById(Hotels hotels, IFormFile imageFile);

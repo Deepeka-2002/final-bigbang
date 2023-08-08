@@ -30,6 +30,13 @@ namespace BigBang.Controllers
             return Ok(customers);
         }
 
+        [HttpGet("ActiveUsers")]
+        public async Task<ActionResult<IEnumerable<User>>> GetActiveUsers()
+        {
+            var customers = await _userRepository.GetActiveUsers();
+            return Ok(customers);
+        }
+
         [HttpPost("register")]
         public async Task<ActionResult<string>> Register(User user)
         {
@@ -38,7 +45,6 @@ namespace BigBang.Controllers
                 return Problem("User repository is null.");
             }
 
-            // Encrypt the password before storing it
             user.Password = Encrypt(user.Password);
             if(user.Role == "Agent")
             {
@@ -139,6 +145,21 @@ namespace BigBang.Controllers
             return Ok("User rejected successfully.");
         }
 
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<List<User>>> DeleteUserById(int id)
+        {
+            try
+            {
+                var customer = await _userRepository.DeleteUserById(id);
+                return Ok(customer);
+            }
+            catch (ArithmeticException ex) 
+
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
         private string GenerateJwtToken(User user)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSecret));
@@ -151,10 +172,10 @@ namespace BigBang.Controllers
                 {
                 new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
                 new Claim(ClaimTypes.Name, user.UserName),
-                //new Claim(ClaimTypes.Role, user.Role),
+                new Claim(ClaimTypes.Role, user.Role),
                 new Claim(ClaimTypes.Email, user.EmailId),
              }),
-                Expires = DateTime.UtcNow.AddDays(1), // Token expiration time (you can adjust it as needed)
+                Expires = DateTime.UtcNow.AddDays(1), 
                 SigningCredentials = credentials
             };
 

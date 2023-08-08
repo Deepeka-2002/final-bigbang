@@ -32,6 +32,22 @@ namespace BigBang.Services
             return customer;
         }
 
+        public async Task<int> GetLastInsertedPackageId()
+        {
+            try
+            {
+                var lastPackage = await _Context.tourpackage
+                    .OrderByDescending(p => p.PackageId)
+                    .FirstOrDefaultAsync();
+
+                return lastPackage?.PackageId ?? 0;
+            }
+            catch (Exception ex)
+            {
+                // Log the error
+                throw new Exception("Failed to get the last inserted package ID.", ex);
+            }
+        }
         public async Task<TourPackage> AddTourPackage([FromForm] TourPackage tourpackage, IFormFile imageFile)
         {
             if (imageFile == null || imageFile.Length == 0)

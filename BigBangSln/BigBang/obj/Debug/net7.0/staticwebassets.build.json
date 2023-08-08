@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1mXd6eOz7bPYATbLSuv16/vHPyn2WlJ4fecPPILLoRY=",
+  "Hash": "o7Yz7yLxQPNnY4YvPu3W1blT4DKYL4kYLLwwetBWMAM=",
   "Source": "BigBang",
   "BasePath": "_content/BigBang",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Gallery\\969c8ca7-da1b-481a-b830-6c6f37195999.jpg",
+      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Hotels\\377227bf-8609-4639-beb8-4f8ea5f3ea80.jpg",
       "SourceId": "BigBang",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\",
       "BasePath": "_content/BigBang",
-      "RelativePath": "Gallery/969c8ca7-da1b-481a-b830-6c6f37195999.jpg",
+      "RelativePath": "Hotels/377227bf-8609-4639-beb8-4f8ea5f3ea80.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -31,15 +31,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Gallery\\969c8ca7-da1b-481a-b830-6c6f37195999.jpg"
+      "OriginalItemSpec": "wwwroot\\Hotels\\377227bf-8609-4639-beb8-4f8ea5f3ea80.jpg"
     },
     {
-      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Gallery\\9ae22c89-487b-4683-a402-5128afd20927.jpg",
+      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Hotels\\caa4b816-54c6-4b55-900b-17a231d25268.jpg",
       "SourceId": "BigBang",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\",
       "BasePath": "_content/BigBang",
-      "RelativePath": "Gallery/9ae22c89-487b-4683-a402-5128afd20927.jpg",
+      "RelativePath": "Hotels/caa4b816-54c6-4b55-900b-17a231d25268.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -48,15 +48,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Gallery\\9ae22c89-487b-4683-a402-5128afd20927.jpg"
+      "OriginalItemSpec": "wwwroot\\Hotels\\caa4b816-54c6-4b55-900b-17a231d25268.jpg"
     },
     {
-      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Gallery\\ee921dc6-1e80-4505-8fe1-bfd09b46deb2.jpg",
+      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Hotels\\cc33932a-691f-4806-be67-d5e35ed9d8b1.jpg",
       "SourceId": "BigBang",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\",
       "BasePath": "_content/BigBang",
-      "RelativePath": "Gallery/ee921dc6-1e80-4505-8fe1-bfd09b46deb2.jpg",
+      "RelativePath": "Hotels/cc33932a-691f-4806-be67-d5e35ed9d8b1.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,15 +65,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Gallery\\ee921dc6-1e80-4505-8fe1-bfd09b46deb2.jpg"
+      "OriginalItemSpec": "wwwroot\\Hotels\\cc33932a-691f-4806-be67-d5e35ed9d8b1.jpg"
     },
     {
-      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Hotels\\8cb19825-d0a9-4b2a-8ace-c11b43c6af51.jpg",
+      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Hotels\\df55662f-c21e-4960-a111-8f925d44fea6.jpg",
       "SourceId": "BigBang",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\",
       "BasePath": "_content/BigBang",
-      "RelativePath": "Hotels/8cb19825-d0a9-4b2a-8ace-c11b43c6af51.jpg",
+      "RelativePath": "Hotels/df55662f-c21e-4960-a111-8f925d44fea6.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -82,15 +82,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Hotels\\8cb19825-d0a9-4b2a-8ace-c11b43c6af51.jpg"
+      "OriginalItemSpec": "wwwroot\\Hotels\\df55662f-c21e-4960-a111-8f925d44fea6.jpg"
     },
     {
-      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Hotels\\d541bf4c-798f-4910-a981-adbeba135cce.jpg",
+      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\230eb80f-9817-4084-b9f4-ffeca4ac2889.jpg",
       "SourceId": "BigBang",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\",
       "BasePath": "_content/BigBang",
-      "RelativePath": "Hotels/d541bf4c-798f-4910-a981-adbeba135cce.jpg",
+      "RelativePath": "Packages/230eb80f-9817-4084-b9f4-ffeca4ac2889.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -99,15 +99,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Hotels\\d541bf4c-798f-4910-a981-adbeba135cce.jpg"
+      "OriginalItemSpec": "wwwroot\\Packages\\230eb80f-9817-4084-b9f4-ffeca4ac2889.jpg"
     },
     {
-      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\15881906-daf5-437e-a175-3f069f088f1f.jpg",
+      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\458754bd-c0a0-4609-84cf-364980c86e74.jpg",
       "SourceId": "BigBang",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\",
       "BasePath": "_content/BigBang",
-      "RelativePath": "Packages/15881906-daf5-437e-a175-3f069f088f1f.jpg",
+      "RelativePath": "Packages/458754bd-c0a0-4609-84cf-364980c86e74.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -116,15 +116,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Packages\\15881906-daf5-437e-a175-3f069f088f1f.jpg"
+      "OriginalItemSpec": "wwwroot\\Packages\\458754bd-c0a0-4609-84cf-364980c86e74.jpg"
     },
     {
-      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\1a96f52e-d4a6-4b9c-b029-1967c6d8f7d0.jpg",
+      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\94145fe8-c374-4640-828b-e3e0fc3ed717.jpg",
       "SourceId": "BigBang",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\",
       "BasePath": "_content/BigBang",
-      "RelativePath": "Packages/1a96f52e-d4a6-4b9c-b029-1967c6d8f7d0.jpg",
+      "RelativePath": "Packages/94145fe8-c374-4640-828b-e3e0fc3ed717.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -133,15 +133,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Packages\\1a96f52e-d4a6-4b9c-b029-1967c6d8f7d0.jpg"
+      "OriginalItemSpec": "wwwroot\\Packages\\94145fe8-c374-4640-828b-e3e0fc3ed717.jpg"
     },
     {
-      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\5200f508-b62c-4316-aa7a-15c0ba94f644.png",
+      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Restaurents\\494772af-b835-46ee-b62c-d382531d5db7.jpg",
       "SourceId": "BigBang",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\",
       "BasePath": "_content/BigBang",
-      "RelativePath": "Packages/5200f508-b62c-4316-aa7a-15c0ba94f644.png",
+      "RelativePath": "Restaurents/494772af-b835-46ee-b62c-d382531d5db7.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -150,15 +150,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Packages\\5200f508-b62c-4316-aa7a-15c0ba94f644.png"
+      "OriginalItemSpec": "wwwroot\\Restaurents\\494772af-b835-46ee-b62c-d382531d5db7.jpg"
     },
     {
-      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\8b157111-e659-46b3-8c45-ba7d321362aa.jpg",
+      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Restaurents\\579eccb0-bba1-481d-b1a4-5817fb856a22.jpg",
       "SourceId": "BigBang",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\",
       "BasePath": "_content/BigBang",
-      "RelativePath": "Packages/8b157111-e659-46b3-8c45-ba7d321362aa.jpg",
+      "RelativePath": "Restaurents/579eccb0-bba1-481d-b1a4-5817fb856a22.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -167,15 +167,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Packages\\8b157111-e659-46b3-8c45-ba7d321362aa.jpg"
+      "OriginalItemSpec": "wwwroot\\Restaurents\\579eccb0-bba1-481d-b1a4-5817fb856a22.jpg"
     },
     {
-      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\c73071ad-1436-4cfd-b081-7d6b49d4874f.jpg",
+      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Restaurents\\a42f17b8-beec-47d8-bf8b-ec7e2d3d21aa.jpg",
       "SourceId": "BigBang",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\",
       "BasePath": "_content/BigBang",
-      "RelativePath": "Packages/c73071ad-1436-4cfd-b081-7d6b49d4874f.jpg",
+      "RelativePath": "Restaurents/a42f17b8-beec-47d8-bf8b-ec7e2d3d21aa.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -184,15 +184,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Packages\\c73071ad-1436-4cfd-b081-7d6b49d4874f.jpg"
+      "OriginalItemSpec": "wwwroot\\Restaurents\\a42f17b8-beec-47d8-bf8b-ec7e2d3d21aa.jpg"
     },
     {
-      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\d57c9f57-70b8-4bcb-99eb-8d15bb7c3b59.jpg",
+      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Restaurents\\ad75336c-2bdb-47d0-b707-4ec6d0a4f2b3.jpg",
       "SourceId": "BigBang",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\",
       "BasePath": "_content/BigBang",
-      "RelativePath": "Packages/d57c9f57-70b8-4bcb-99eb-8d15bb7c3b59.jpg",
+      "RelativePath": "Restaurents/ad75336c-2bdb-47d0-b707-4ec6d0a4f2b3.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -201,15 +201,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Packages\\d57c9f57-70b8-4bcb-99eb-8d15bb7c3b59.jpg"
+      "OriginalItemSpec": "wwwroot\\Restaurents\\ad75336c-2bdb-47d0-b707-4ec6d0a4f2b3.jpg"
     },
     {
-      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\dffcd7c8-89ac-4c8f-8450-b6ae38337641.jpg",
+      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Restaurents\\f6fb8e9d-e3e1-4ca3-8c25-b90257d6be9d.jpg",
       "SourceId": "BigBang",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\",
       "BasePath": "_content/BigBang",
-      "RelativePath": "Packages/dffcd7c8-89ac-4c8f-8450-b6ae38337641.jpg",
+      "RelativePath": "Restaurents/f6fb8e9d-e3e1-4ca3-8c25-b90257d6be9d.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -218,15 +218,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Packages\\dffcd7c8-89ac-4c8f-8450-b6ae38337641.jpg"
+      "OriginalItemSpec": "wwwroot\\Restaurents\\f6fb8e9d-e3e1-4ca3-8c25-b90257d6be9d.jpg"
     },
     {
-      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\e785cddd-dbb3-41b3-9248-f6ee78814f9e.jpg",
+      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Spots\\0c9c66c8-285f-4b67-9d41-c7164abe52ba.jpg",
       "SourceId": "BigBang",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\",
       "BasePath": "_content/BigBang",
-      "RelativePath": "Packages/e785cddd-dbb3-41b3-9248-f6ee78814f9e.jpg",
+      "RelativePath": "Spots/0c9c66c8-285f-4b67-9d41-c7164abe52ba.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -235,7 +235,41 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Packages\\e785cddd-dbb3-41b3-9248-f6ee78814f9e.jpg"
+      "OriginalItemSpec": "wwwroot\\Spots\\0c9c66c8-285f-4b67-9d41-c7164abe52ba.jpg"
+    },
+    {
+      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Spots\\4e57233d-cc28-4154-8ed5-5947430f8dea.jpg",
+      "SourceId": "BigBang",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\",
+      "BasePath": "_content/BigBang",
+      "RelativePath": "Spots/4e57233d-cc28-4154-8ed5-5947430f8dea.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Spots\\4e57233d-cc28-4154-8ed5-5947430f8dea.jpg"
+    },
+    {
+      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Spots\\4fff8a87-0349-461d-b95c-83f9190c7db2.jpg",
+      "SourceId": "BigBang",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\",
+      "BasePath": "_content/BigBang",
+      "RelativePath": "Spots/4fff8a87-0349-461d-b95c-83f9190c7db2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Spots\\4fff8a87-0349-461d-b95c-83f9190c7db2.jpg"
     },
     {
       "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Spots\\697b4335-457d-45a5-95b0-774ad187de6a.png",
@@ -253,6 +287,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Spots\\697b4335-457d-45a5-95b0-774ad187de6a.png"
+    },
+    {
+      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Spots\\84508c88-a57d-471c-8478-18bbec95665f.jpg",
+      "SourceId": "BigBang",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\",
+      "BasePath": "_content/BigBang",
+      "RelativePath": "Spots/84508c88-a57d-471c-8478-18bbec95665f.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Spots\\84508c88-a57d-471c-8478-18bbec95665f.jpg"
     },
     {
       "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Spots\\84da9f78-aa64-4a0a-9332-2e005bc18611.jpg",
@@ -287,6 +338,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Spots\\8ea676dc-5774-462f-b0d6-9ec275d8a045.jpg"
+    },
+    {
+      "Identity": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Spots\\c8bed298-2e53-48a9-9298-0ae14f110c60.jpg",
+      "SourceId": "BigBang",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\",
+      "BasePath": "_content/BigBang",
+      "RelativePath": "Spots/c8bed298-2e53-48a9-9298-0ae14f110c60.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Spots\\c8bed298-2e53-48a9-9298-0ae14f110c60.jpg"
     }
   ]
 }

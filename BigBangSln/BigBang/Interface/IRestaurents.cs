@@ -1,15 +1,15 @@
 ﻿using BigBang.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace BigBang.Interface
 {
     public interface IRestaurents
     {
-        Task<List<Restaurents>> GetRestaurents();
-        Task<Restaurents>? GetRestaurentById(int id);
+        IEnumerable<Restaurents> GetRestaurents();
+        IEnumerable<Restaurents> GetRestaurentById(int id);
+        Task<Restaurents> AddRestaurent([FromForm] Restaurents restaurents, IFormFile imageFile);
         IEnumerable<Restaurents> Filterpackage(int packageId);
-        Task<List<Restaurents>> AddRestaurent(Restaurents apps);
-
-        Task<List<Restaurents>?> UpdateRestaurentById(int id, Restaurents apps);
+        Task<Restaurents>? UpdateRestaurentById(Restaurents restaurents, IFormFile imageFile);
         Task<List<Restaurents>?> DeleteRestaurentById(int id);
     }
 }

@@ -1,5 +1,6 @@
 ﻿using BigBang.Interface;
 using BigBang.Models;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Hosting;
@@ -12,68 +13,153 @@ namespace BigBang.Controllers
     public class RestaurentsController : ControllerBase
     {
         private readonly IRestaurents IRestaurent;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public RestaurentsController(IRestaurents IRestaurent)
+        public RestaurentsController(IRestaurents IRestaurent, IWebHostEnvironment webHostEnvironment)
         {
             this.IRestaurent = IRestaurent;
+            _webHostEnvironment = webHostEnvironment;
         }
 
         // GET: api/Customers
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Restaurents>>> GetRestaurents()
+        public IActionResult GetRestaurents()
         {
-            var customers = await IRestaurent.GetRestaurents();
-            return Ok(customers);
+            var images = IRestaurent.GetRestaurents();
+            if (images == null)
+            {
+                return NotFound();
+            }
+
+            var imageList = new List<Restaurents>();
+            foreach (var image in images)
+            {
+                var uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "Restaurents");
+                var filePath = Path.Combine(uploadsFolder, image.RestaurentImg);
+
+                var imageBytes = System.IO.File.ReadAllBytes(filePath);
+                var Data = new Restaurents
+                {
+                    PackageId = image.PackageId,
+
+                    RestaurentName = image.RestaurentName,
+                    Location = image.Location,
+                    RestaurentId = image.RestaurentId,
+
+                    RestaurentImg = Convert.ToBase64String(imageBytes)
+                };
+
+                imageList.Add(Data);
+            }
+
+            return new JsonResult(imageList);
         }
 
         [HttpGet("Filter/{packageId}")]
-        public IEnumerable<Restaurents> Filterpackage(int packageId)
+        public IActionResult Filterpackage(int packageId)
         {
 
-            return IRestaurent.Filterpackage(packageId);
+            var images = IRestaurent.Filterpackage(packageId);
+            if (images == null)
+            {
+                return NotFound();
+            }
+
+            var imageList = new List<Restaurents>();
+            foreach (var image in images)
+            {
+                var uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "Restaurents");
+                var filePath = Path.Combine(uploadsFolder, image.RestaurentImg);
+
+                var imageBytes = System.IO.File.ReadAllBytes(filePath);
+                var Data = new Restaurents
+                {
+                    PackageId = image.PackageId,
+
+                    RestaurentName = image.RestaurentName,
+                    Location = image.Location,
+                    RestaurentId = image.RestaurentId,
+
+                    RestaurentImg = Convert.ToBase64String(imageBytes)
+                };
+
+                imageList.Add(Data);
+            }
+
+            return new JsonResult(imageList);
 
         }
-
         [HttpGet("{id}")]
-        public async Task<ActionResult<Restaurents>> GetRestaurentById(int id)
+        public IActionResult GetRestaurentById(int id)
         {
-            try
+
+            var images = IRestaurent.GetRestaurentById(id);
+            if (images == null)
             {
-                var customer = await IRestaurent.GetRestaurentById(id);
-                return Ok(customer);
+                return NotFound();
             }
 
-            catch (NullReferenceException ex)
+            var imageList = new List<Restaurents>();
+            foreach (var image in images)
             {
-                return NotFound(ex.Message);
+                var uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "Restaurents");
+                var filePath = Path.Combine(uploadsFolder, image.RestaurentImg);
+
+                var imageBytes = System.IO.File.ReadAllBytes(filePath);
+                var Data = new Restaurents
+                {
+                    PackageId = image.PackageId,
+
+                    RestaurentName = image.RestaurentName,
+                    Location = image.Location,
+                    RestaurentId = image.RestaurentId,
+
+                    RestaurentImg = Convert.ToBase64String(imageBytes)
+                };
+
+                imageList.Add(Data);
             }
+
+            return new JsonResult(imageList);
+
         }
 
         // PUT: api/Customers/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<ActionResult<List<Restaurents>>> UpdateRestaurent(int id, Restaurents apps)
+        public async Task<ActionResult<Restaurents>> Put(int id, [FromForm] Restaurents restaurents, IFormFile imageFile)
         {
-
             try
             {
-                var customer = await IRestaurent.UpdateRestaurentById(id, apps);
-                return Ok(customer);
+                restaurents.RestaurentId = id;
+                var updatedTour = await IRestaurent.UpdateRestaurentById(restaurents, imageFile);
+                return Ok(updatedTour);
             }
-            catch (ArithmeticException ex)
+            catch (ArgumentException ex)
             {
-                return NotFound(ex.Message);
+                ModelState.AddModelError("", ex.Message);
+                return BadRequest(ModelState);
             }
         }
 
         // POST: api/Customers
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<List<Restaurents>>> AddRestaurent(Restaurents apps)
+        public async Task<ActionResult> Post([FromForm] Restaurents restaurents, IFormFile imageFile)
         {
-            var customer = await IRestaurent.AddRestaurent(apps);
-            return Ok(customer);
+
+            try
+            {
+                var createdHotel = await IRestaurent.AddRestaurent(restaurents, imageFile);
+                return CreatedAtAction("Post", createdHotel);
+
+            }
+            catch (ArgumentException ex)
+            {
+
+                return BadRequest(ModelState);
+            }
         }
 
         // DELETE: api/Customers/5

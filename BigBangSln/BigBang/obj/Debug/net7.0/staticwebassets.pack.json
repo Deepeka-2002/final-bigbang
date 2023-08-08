@@ -1,60 +1,72 @@
 {
   "Files": [
     {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Gallery\\969c8ca7-da1b-481a-b830-6c6f37195999.jpg",
-      "PackagePath": "staticwebassets\\Gallery\\969c8ca7-da1b-481a-b830-6c6f37195999.jpg"
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Hotels\\377227bf-8609-4639-beb8-4f8ea5f3ea80.jpg",
+      "PackagePath": "staticwebassets\\Hotels\\377227bf-8609-4639-beb8-4f8ea5f3ea80.jpg"
     },
     {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Gallery\\9ae22c89-487b-4683-a402-5128afd20927.jpg",
-      "PackagePath": "staticwebassets\\Gallery\\9ae22c89-487b-4683-a402-5128afd20927.jpg"
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Hotels\\caa4b816-54c6-4b55-900b-17a231d25268.jpg",
+      "PackagePath": "staticwebassets\\Hotels\\caa4b816-54c6-4b55-900b-17a231d25268.jpg"
     },
     {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Gallery\\ee921dc6-1e80-4505-8fe1-bfd09b46deb2.jpg",
-      "PackagePath": "staticwebassets\\Gallery\\ee921dc6-1e80-4505-8fe1-bfd09b46deb2.jpg"
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Hotels\\cc33932a-691f-4806-be67-d5e35ed9d8b1.jpg",
+      "PackagePath": "staticwebassets\\Hotels\\cc33932a-691f-4806-be67-d5e35ed9d8b1.jpg"
     },
     {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Hotels\\8cb19825-d0a9-4b2a-8ace-c11b43c6af51.jpg",
-      "PackagePath": "staticwebassets\\Hotels\\8cb19825-d0a9-4b2a-8ace-c11b43c6af51.jpg"
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Hotels\\df55662f-c21e-4960-a111-8f925d44fea6.jpg",
+      "PackagePath": "staticwebassets\\Hotels\\df55662f-c21e-4960-a111-8f925d44fea6.jpg"
     },
     {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Hotels\\d541bf4c-798f-4910-a981-adbeba135cce.jpg",
-      "PackagePath": "staticwebassets\\Hotels\\d541bf4c-798f-4910-a981-adbeba135cce.jpg"
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\230eb80f-9817-4084-b9f4-ffeca4ac2889.jpg",
+      "PackagePath": "staticwebassets\\Packages\\230eb80f-9817-4084-b9f4-ffeca4ac2889.jpg"
     },
     {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\15881906-daf5-437e-a175-3f069f088f1f.jpg",
-      "PackagePath": "staticwebassets\\Packages\\15881906-daf5-437e-a175-3f069f088f1f.jpg"
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\458754bd-c0a0-4609-84cf-364980c86e74.jpg",
+      "PackagePath": "staticwebassets\\Packages\\458754bd-c0a0-4609-84cf-364980c86e74.jpg"
     },
     {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\1a96f52e-d4a6-4b9c-b029-1967c6d8f7d0.jpg",
-      "PackagePath": "staticwebassets\\Packages\\1a96f52e-d4a6-4b9c-b029-1967c6d8f7d0.jpg"
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\94145fe8-c374-4640-828b-e3e0fc3ed717.jpg",
+      "PackagePath": "staticwebassets\\Packages\\94145fe8-c374-4640-828b-e3e0fc3ed717.jpg"
     },
     {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\5200f508-b62c-4316-aa7a-15c0ba94f644.png",
-      "PackagePath": "staticwebassets\\Packages\\5200f508-b62c-4316-aa7a-15c0ba94f644.png"
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Restaurents\\494772af-b835-46ee-b62c-d382531d5db7.jpg",
+      "PackagePath": "staticwebassets\\Restaurents\\494772af-b835-46ee-b62c-d382531d5db7.jpg"
     },
     {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\8b157111-e659-46b3-8c45-ba7d321362aa.jpg",
-      "PackagePath": "staticwebassets\\Packages\\8b157111-e659-46b3-8c45-ba7d321362aa.jpg"
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Restaurents\\579eccb0-bba1-481d-b1a4-5817fb856a22.jpg",
+      "PackagePath": "staticwebassets\\Restaurents\\579eccb0-bba1-481d-b1a4-5817fb856a22.jpg"
     },
     {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\c73071ad-1436-4cfd-b081-7d6b49d4874f.jpg",
-      "PackagePath": "staticwebassets\\Packages\\c73071ad-1436-4cfd-b081-7d6b49d4874f.jpg"
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Restaurents\\a42f17b8-beec-47d8-bf8b-ec7e2d3d21aa.jpg",
+      "PackagePath": "staticwebassets\\Restaurents\\a42f17b8-beec-47d8-bf8b-ec7e2d3d21aa.jpg"
     },
     {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\d57c9f57-70b8-4bcb-99eb-8d15bb7c3b59.jpg",
-      "PackagePath": "staticwebassets\\Packages\\d57c9f57-70b8-4bcb-99eb-8d15bb7c3b59.jpg"
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Restaurents\\ad75336c-2bdb-47d0-b707-4ec6d0a4f2b3.jpg",
+      "PackagePath": "staticwebassets\\Restaurents\\ad75336c-2bdb-47d0-b707-4ec6d0a4f2b3.jpg"
     },
     {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\dffcd7c8-89ac-4c8f-8450-b6ae38337641.jpg",
-      "PackagePath": "staticwebassets\\Packages\\dffcd7c8-89ac-4c8f-8450-b6ae38337641.jpg"
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Restaurents\\f6fb8e9d-e3e1-4ca3-8c25-b90257d6be9d.jpg",
+      "PackagePath": "staticwebassets\\Restaurents\\f6fb8e9d-e3e1-4ca3-8c25-b90257d6be9d.jpg"
     },
     {
-      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Packages\\e785cddd-dbb3-41b3-9248-f6ee78814f9e.jpg",
-      "PackagePath": "staticwebassets\\Packages\\e785cddd-dbb3-41b3-9248-f6ee78814f9e.jpg"
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Spots\\0c9c66c8-285f-4b67-9d41-c7164abe52ba.jpg",
+      "PackagePath": "staticwebassets\\Spots\\0c9c66c8-285f-4b67-9d41-c7164abe52ba.jpg"
+    },
+    {
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Spots\\4e57233d-cc28-4154-8ed5-5947430f8dea.jpg",
+      "PackagePath": "staticwebassets\\Spots\\4e57233d-cc28-4154-8ed5-5947430f8dea.jpg"
+    },
+    {
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Spots\\4fff8a87-0349-461d-b95c-83f9190c7db2.jpg",
+      "PackagePath": "staticwebassets\\Spots\\4fff8a87-0349-461d-b95c-83f9190c7db2.jpg"
     },
     {
       "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Spots\\697b4335-457d-45a5-95b0-774ad187de6a.png",
       "PackagePath": "staticwebassets\\Spots\\697b4335-457d-45a5-95b0-774ad187de6a.png"
+    },
+    {
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Spots\\84508c88-a57d-471c-8478-18bbec95665f.jpg",
+      "PackagePath": "staticwebassets\\Spots\\84508c88-a57d-471c-8478-18bbec95665f.jpg"
     },
     {
       "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Spots\\84da9f78-aa64-4a0a-9332-2e005bc18611.jpg",
@@ -63,6 +75,10 @@
     {
       "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Spots\\8ea676dc-5774-462f-b0d6-9ec275d8a045.jpg",
       "PackagePath": "staticwebassets\\Spots\\8ea676dc-5774-462f-b0d6-9ec275d8a045.jpg"
+    },
+    {
+      "Id": "C:\\Kanini training\\final-bigbang\\BigBangSln\\BigBang\\wwwroot\\Spots\\c8bed298-2e53-48a9-9298-0ae14f110c60.jpg",
+      "PackagePath": "staticwebassets\\Spots\\c8bed298-2e53-48a9-9298-0ae14f110c60.jpg"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.BigBang.Microsoft.AspNetCore.StaticWebAssets.props",

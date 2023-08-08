@@ -56,18 +56,38 @@ namespace BigBang.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Hotels>> GetHotelById(int id)
+        public IActionResult GetHotelById(int id)
         {
-            try
+
+            var images = IHot.GetHotelById(id);
+            if (images == null)
             {
-                var customer = await IHot.GetHotelById(id);
-                return Ok(customer);
+                return NotFound();
             }
 
-            catch (NullReferenceException ex)
+            var imageList = new List<Hotels>();
+            foreach (var image in images)
             {
-                return NotFound(ex.Message);
+                var uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "Hotels");
+                var filePath = Path.Combine(uploadsFolder, image.HotelImg);
+
+                var imageBytes = System.IO.File.ReadAllBytes(filePath);
+                var Data = new Hotels
+                {
+                    PackageId = image.PackageId,
+
+                    HotelName = image.HotelName,
+                    Location = image.Location,
+                    HotelId = image.HotelId,
+
+                    HotelImg = Convert.ToBase64String(imageBytes)
+                };
+
+                imageList.Add(Data);
             }
+
+            return new JsonResult(imageList);
+
         }
 
         [HttpGet("Filter/{packageId}")]

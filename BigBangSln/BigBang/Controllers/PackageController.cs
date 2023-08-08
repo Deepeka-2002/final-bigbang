@@ -1,7 +1,9 @@
 ﻿using BigBang.Interface;
 using BigBang.Models;
+using BigBang.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -67,6 +69,21 @@ namespace BigBang.Controllers
             catch (ArithmeticException ex)
             {
                 return NotFound(ex.Message);
+            }
+        }
+
+        [HttpGet("last-package-id")]
+        public async Task<ActionResult<int>> GetLastInsertedPackageId()
+        {
+            try
+            {
+                var lastPackageId = await IPack.GetLastInsertedPackageId();
+                return Ok(lastPackageId);
+            }
+            catch (Exception ex)
+            {
+                // Log the error
+                return StatusCode(500, "Internal server error");
             }
         }
 

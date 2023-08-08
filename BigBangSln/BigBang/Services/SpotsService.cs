@@ -22,14 +22,10 @@ namespace BigBang.Services
             return apps;
         }
 
-        public async Task<NearbySpots?> GetSpotById(int id)
+        public IEnumerable<NearbySpots> GetSpotById(int id)
         {
-            var customer = await _Context.nearbyspots.FindAsync(id);
-            if (customer is null)
-            {
-                throw new ArithmeticException("Invalid id");
-            }
-            return customer;
+            List<NearbySpots> spots = _Context.nearbyspots.Where(x => x.SpotId == id).ToList();
+            return spots;
         }
 
         public IEnumerable<NearbySpots> Filterpackage(int packageId)

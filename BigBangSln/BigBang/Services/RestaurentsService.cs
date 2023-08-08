@@ -16,19 +16,15 @@ namespace BigBang.Services
         }
 
 
-        public async Task<List<Restaurents>> GetRestaurents()
+        public IEnumerable<Restaurents> GetRestaurents()
         {
-            var apps = await _Context.restaurents.ToListAsync();
+            var apps = _Context.restaurents.ToList();
             return apps;
         }
-        public async Task<Restaurents?> GetRestaurentById(int id)
+        public IEnumerable<Restaurents> GetRestaurentById(int id)
         {
-            var customer = await _Context.restaurents.FindAsync(id);
-            if (customer is null)
-            {
-                throw new ArithmeticException("Invalid id");
-            }
-            return customer;
+            List<Restaurents> restaurents = _Context.restaurents.Where(x => x.RestaurentId == id).ToList();
+            return restaurents;
         }
 
         public IEnumerable<Restaurents> Filterpackage(int packageId)
@@ -39,28 +35,58 @@ namespace BigBang.Services
 
 
 
-        public async Task<List<Restaurents>> AddRestaurent(Restaurents apps)
+        public async Task<Restaurents> AddRestaurent([FromForm] Restaurents restaurents, IFormFile imageFile)
         {
-
-            _Context.restaurents.Add(apps);
-            await _Context.SaveChangesAsync();
-            return await _Context.restaurents.ToListAsync();
-        }
-
-        public async Task<List<Restaurents>?> UpdateRestaurentById(int id, Restaurents apps)
-        {
-            var customer = await _Context.restaurents.FindAsync(id);
-            if (customer is null)
+            if (imageFile == null || imageFile.Length == 0)
             {
-                throw new ArithmeticException("Invalid  id to update details");
+                throw new ArgumentException("Invalid file");
             }
-            customer.RestaurentName = apps.RestaurentName;
 
-            customer.Location = apps.Location;
-            
+            var uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "Restaurents");
+            var fileName = Guid.NewGuid().ToString() + Path.GetExtension(imageFile.FileName);
+            var filePath = Path.Combine(uploadsFolder, fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await imageFile.CopyToAsync(stream);
+            }
+
+            restaurents.RestaurentImg = fileName;
+
+            _Context.restaurents.Add(restaurents);
+            await _Context.SaveChangesAsync();
+            return restaurents;
+        }
+        public async Task<Restaurents>? UpdateRestaurentById(Restaurents restaurents, IFormFile imageFile)
+        {
+
+            var existingHotel = await _Context.restaurents.FindAsync(restaurents.RestaurentId);
+
+            if (existingHotel == null)
+            {
+                throw new ArgumentException("Restaurent not found");
+            }
+
+            existingHotel.RestaurentName = restaurents.RestaurentName;
+
+            if (imageFile != null && imageFile.Length > 0)
+            {
+                var uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "Restaurents");
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(imageFile.FileName);
+                var filePath = Path.Combine(uploadsFolder, fileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await imageFile.CopyToAsync(stream);
+                }
+
+                existingHotel.RestaurentImg = fileName;
+
+            }
 
             await _Context.SaveChangesAsync();
-            return await _Context.restaurents.ToListAsync();
+
+            return existingHotel;
         }
 
 

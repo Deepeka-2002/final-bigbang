@@ -32,6 +32,14 @@ namespace BigBang.Services
                 return users;
             }
 
+
+        public async Task<List<User>> GetActiveUsers()
+        {
+            var users = await _context.user.Where(u => u.Agency != "null" & u.Status == true).ToListAsync();
+            return users;
+        }
+
+
         public async Task<List<User>> GetPendingUsers()
         {
             var users = await _context.user.Where(u => u.Status == false).ToListAsync();
@@ -61,7 +69,20 @@ namespace BigBang.Services
                 return await _context.user.FirstOrDefaultAsync(u => u.EmailId == email);
             }
 
-            private string Encrypt(string password)
+
+        public async Task<List<User>?> DeleteUserById(int id)
+        {
+            var customer = await _context.user.FindAsync(id);
+            if (customer is null)
+            {
+                throw new ArithmeticException("Invalid  id to delete");
+
+            }
+            _context.Remove(customer);
+            await _context.SaveChangesAsync();
+            return await _context.user.ToListAsync();
+        }
+        private string Encrypt(string password)
             {
                 // Example key and IV generation using hashing
                 string passphrase = "your-passphrase";

@@ -33,6 +33,9 @@ namespace BigBang.Migrations
                     b.Property<int>("Adult")
                         .HasColumnType("int");
 
+                    b.Property<int>("Amount")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("CheckIn")
                         .HasColumnType("datetime2");
 
@@ -209,6 +212,10 @@ namespace BigBang.Migrations
 
                     b.Property<int>("PackageId")
                         .HasColumnType("int");
+
+                    b.Property<string>("RestaurentImg")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("RestaurentName")
                         .IsRequired()

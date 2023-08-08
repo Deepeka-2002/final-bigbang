@@ -59,18 +59,37 @@ namespace BigBang.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<NearbySpots>> GetSpotById(int id)
+        public IActionResult GetSpotById(int id)
         {
-            try
+            var images = ISpot.GetSpotById(id);
+            if (images == null)
             {
-                var customer = await ISpot.GetSpotById(id);
-                return Ok(customer);
+                return NotFound();
             }
 
-            catch (ArithmeticException ex)
+            var imageList = new List<NearbySpots>();
+            foreach (var image in images)
             {
-                return NotFound(ex.Message);
+                var uploadsFolder = Path.Combine(_webHostEnvironment.WebRootPath, "Spots");
+                var filePath = Path.Combine(uploadsFolder, image.Spotsimg);
+
+                var imageBytes = System.IO.File.ReadAllBytes(filePath);
+                var Data = new NearbySpots
+                {
+                    PackageId = image.PackageId,
+
+                    Name = image.Name,
+
+                    Location = image.Location,
+                    Description = image.Description,
+                    Spotsimg = Convert.ToBase64String(imageBytes)
+                };
+
+                imageList.Add(Data);
+
             }
+
+            return new JsonResult(imageList);
         }
 
         [HttpGet("Filter/{packageId}")]

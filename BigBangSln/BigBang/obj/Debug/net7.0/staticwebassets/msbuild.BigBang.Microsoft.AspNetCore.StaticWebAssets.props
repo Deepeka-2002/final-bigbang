@@ -1,11 +1,11 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Gallery\969c8ca7-da1b-481a-b830-6c6f37195999.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Hotels\377227bf-8609-4639-beb8-4f8ea5f3ea80.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>BigBang</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BigBang</BasePath>
-      <RelativePath>Gallery/969c8ca7-da1b-481a-b830-6c6f37195999.jpg</RelativePath>
+      <RelativePath>Hotels/377227bf-8609-4639-beb8-4f8ea5f3ea80.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -14,14 +14,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Gallery\969c8ca7-da1b-481a-b830-6c6f37195999.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Hotels\377227bf-8609-4639-beb8-4f8ea5f3ea80.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Gallery\9ae22c89-487b-4683-a402-5128afd20927.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Hotels\caa4b816-54c6-4b55-900b-17a231d25268.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>BigBang</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BigBang</BasePath>
-      <RelativePath>Gallery/9ae22c89-487b-4683-a402-5128afd20927.jpg</RelativePath>
+      <RelativePath>Hotels/caa4b816-54c6-4b55-900b-17a231d25268.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -30,14 +30,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Gallery\9ae22c89-487b-4683-a402-5128afd20927.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Hotels\caa4b816-54c6-4b55-900b-17a231d25268.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Gallery\ee921dc6-1e80-4505-8fe1-bfd09b46deb2.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Hotels\cc33932a-691f-4806-be67-d5e35ed9d8b1.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>BigBang</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BigBang</BasePath>
-      <RelativePath>Gallery/ee921dc6-1e80-4505-8fe1-bfd09b46deb2.jpg</RelativePath>
+      <RelativePath>Hotels/cc33932a-691f-4806-be67-d5e35ed9d8b1.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -46,14 +46,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Gallery\ee921dc6-1e80-4505-8fe1-bfd09b46deb2.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Hotels\cc33932a-691f-4806-be67-d5e35ed9d8b1.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Hotels\8cb19825-d0a9-4b2a-8ace-c11b43c6af51.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Hotels\df55662f-c21e-4960-a111-8f925d44fea6.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>BigBang</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BigBang</BasePath>
-      <RelativePath>Hotels/8cb19825-d0a9-4b2a-8ace-c11b43c6af51.jpg</RelativePath>
+      <RelativePath>Hotels/df55662f-c21e-4960-a111-8f925d44fea6.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -62,14 +62,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Hotels\8cb19825-d0a9-4b2a-8ace-c11b43c6af51.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Hotels\df55662f-c21e-4960-a111-8f925d44fea6.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Hotels\d541bf4c-798f-4910-a981-adbeba135cce.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Packages\230eb80f-9817-4084-b9f4-ffeca4ac2889.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>BigBang</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BigBang</BasePath>
-      <RelativePath>Hotels/d541bf4c-798f-4910-a981-adbeba135cce.jpg</RelativePath>
+      <RelativePath>Packages/230eb80f-9817-4084-b9f4-ffeca4ac2889.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -78,14 +78,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Hotels\d541bf4c-798f-4910-a981-adbeba135cce.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Packages\230eb80f-9817-4084-b9f4-ffeca4ac2889.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Packages\15881906-daf5-437e-a175-3f069f088f1f.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Packages\458754bd-c0a0-4609-84cf-364980c86e74.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>BigBang</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BigBang</BasePath>
-      <RelativePath>Packages/15881906-daf5-437e-a175-3f069f088f1f.jpg</RelativePath>
+      <RelativePath>Packages/458754bd-c0a0-4609-84cf-364980c86e74.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -94,14 +94,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Packages\15881906-daf5-437e-a175-3f069f088f1f.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Packages\458754bd-c0a0-4609-84cf-364980c86e74.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Packages\1a96f52e-d4a6-4b9c-b029-1967c6d8f7d0.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Packages\94145fe8-c374-4640-828b-e3e0fc3ed717.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>BigBang</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BigBang</BasePath>
-      <RelativePath>Packages/1a96f52e-d4a6-4b9c-b029-1967c6d8f7d0.jpg</RelativePath>
+      <RelativePath>Packages/94145fe8-c374-4640-828b-e3e0fc3ed717.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -110,14 +110,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Packages\1a96f52e-d4a6-4b9c-b029-1967c6d8f7d0.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Packages\94145fe8-c374-4640-828b-e3e0fc3ed717.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Packages\5200f508-b62c-4316-aa7a-15c0ba94f644.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Restaurents\494772af-b835-46ee-b62c-d382531d5db7.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>BigBang</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BigBang</BasePath>
-      <RelativePath>Packages/5200f508-b62c-4316-aa7a-15c0ba94f644.png</RelativePath>
+      <RelativePath>Restaurents/494772af-b835-46ee-b62c-d382531d5db7.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -126,14 +126,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Packages\5200f508-b62c-4316-aa7a-15c0ba94f644.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Restaurents\494772af-b835-46ee-b62c-d382531d5db7.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Packages\8b157111-e659-46b3-8c45-ba7d321362aa.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Restaurents\579eccb0-bba1-481d-b1a4-5817fb856a22.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>BigBang</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BigBang</BasePath>
-      <RelativePath>Packages/8b157111-e659-46b3-8c45-ba7d321362aa.jpg</RelativePath>
+      <RelativePath>Restaurents/579eccb0-bba1-481d-b1a4-5817fb856a22.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -142,14 +142,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Packages\8b157111-e659-46b3-8c45-ba7d321362aa.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Restaurents\579eccb0-bba1-481d-b1a4-5817fb856a22.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Packages\c73071ad-1436-4cfd-b081-7d6b49d4874f.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Restaurents\a42f17b8-beec-47d8-bf8b-ec7e2d3d21aa.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>BigBang</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BigBang</BasePath>
-      <RelativePath>Packages/c73071ad-1436-4cfd-b081-7d6b49d4874f.jpg</RelativePath>
+      <RelativePath>Restaurents/a42f17b8-beec-47d8-bf8b-ec7e2d3d21aa.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -158,14 +158,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Packages\c73071ad-1436-4cfd-b081-7d6b49d4874f.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Restaurents\a42f17b8-beec-47d8-bf8b-ec7e2d3d21aa.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Packages\d57c9f57-70b8-4bcb-99eb-8d15bb7c3b59.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Restaurents\ad75336c-2bdb-47d0-b707-4ec6d0a4f2b3.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>BigBang</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BigBang</BasePath>
-      <RelativePath>Packages/d57c9f57-70b8-4bcb-99eb-8d15bb7c3b59.jpg</RelativePath>
+      <RelativePath>Restaurents/ad75336c-2bdb-47d0-b707-4ec6d0a4f2b3.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -174,14 +174,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Packages\d57c9f57-70b8-4bcb-99eb-8d15bb7c3b59.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Restaurents\ad75336c-2bdb-47d0-b707-4ec6d0a4f2b3.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Packages\dffcd7c8-89ac-4c8f-8450-b6ae38337641.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Restaurents\f6fb8e9d-e3e1-4ca3-8c25-b90257d6be9d.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>BigBang</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BigBang</BasePath>
-      <RelativePath>Packages/dffcd7c8-89ac-4c8f-8450-b6ae38337641.jpg</RelativePath>
+      <RelativePath>Restaurents/f6fb8e9d-e3e1-4ca3-8c25-b90257d6be9d.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -190,14 +190,14 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Packages\dffcd7c8-89ac-4c8f-8450-b6ae38337641.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Restaurents\f6fb8e9d-e3e1-4ca3-8c25-b90257d6be9d.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Packages\e785cddd-dbb3-41b3-9248-f6ee78814f9e.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Spots\0c9c66c8-285f-4b67-9d41-c7164abe52ba.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>BigBang</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/BigBang</BasePath>
-      <RelativePath>Packages/e785cddd-dbb3-41b3-9248-f6ee78814f9e.jpg</RelativePath>
+      <RelativePath>Spots/0c9c66c8-285f-4b67-9d41-c7164abe52ba.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -206,7 +206,39 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Packages\e785cddd-dbb3-41b3-9248-f6ee78814f9e.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Spots\0c9c66c8-285f-4b67-9d41-c7164abe52ba.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Spots\4e57233d-cc28-4154-8ed5-5947430f8dea.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BigBang</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BigBang</BasePath>
+      <RelativePath>Spots/4e57233d-cc28-4154-8ed5-5947430f8dea.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Spots\4e57233d-cc28-4154-8ed5-5947430f8dea.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Spots\4fff8a87-0349-461d-b95c-83f9190c7db2.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BigBang</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BigBang</BasePath>
+      <RelativePath>Spots/4fff8a87-0349-461d-b95c-83f9190c7db2.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Spots\4fff8a87-0349-461d-b95c-83f9190c7db2.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Spots\697b4335-457d-45a5-95b0-774ad187de6a.png))">
       <SourceType>Package</SourceType>
@@ -223,6 +255,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Spots\697b4335-457d-45a5-95b0-774ad187de6a.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Spots\84508c88-a57d-471c-8478-18bbec95665f.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BigBang</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BigBang</BasePath>
+      <RelativePath>Spots/84508c88-a57d-471c-8478-18bbec95665f.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Spots\84508c88-a57d-471c-8478-18bbec95665f.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Spots\84da9f78-aa64-4a0a-9332-2e005bc18611.jpg))">
       <SourceType>Package</SourceType>
@@ -255,6 +303,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Spots\8ea676dc-5774-462f-b0d6-9ec275d8a045.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Spots\c8bed298-2e53-48a9-9298-0ae14f110c60.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>BigBang</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/BigBang</BasePath>
+      <RelativePath>Spots/c8bed298-2e53-48a9-9298-0ae14f110c60.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Spots\c8bed298-2e53-48a9-9298-0ae14f110c60.jpg))</OriginalItemSpec>
     </StaticWebAsset>
   </ItemGroup>
 </Project>
